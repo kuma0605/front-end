@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<ul>
+			<li>item1</li>
+			<li>item2</li>
+			<li>item3</li>
+			<li>item4</li>
+			<li>item5</li>
+			<li>item6</li>
+		</ul>
+		<script>
+			document.querySelector("ul").addEventListener("mouseover",function(event){
+				console.log(event.target, event.currentTarget)
+				event.target.style.cssText="background:gray";
+
+			})
+		</script>
+	</body>
+</html>
